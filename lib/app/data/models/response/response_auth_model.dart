@@ -14,4 +14,10 @@ class ResponseAuthModel {
         requestToken: json["request_token"],
         idUser: json["id_user"],
     );
+
+     Map<String, dynamic> toJson() => {
+        "success": success,
+        "request_token": requestToken,
+         "id_user": idUser,
+    };
 }
